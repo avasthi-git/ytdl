@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Youtube Multi Downloader">
+<link rel="icon" href="favicon.ico">
+<meta name="title" content="Youtube Multi Downloader Online Free" />
+<meta name="description" content="Free youtube downloader online, free youtube video downloader online, download youtube online free, youtube downloader mp3 online free without any software, youtube multi downloader v3" />
+<meta name="keywords" content="Download youtube, multi download, youtube multi downloader" />
+<meta property="og:title" content="Youtube Multi Downloader Online Free" />
+<meta property="og:description" content="Free youtube downloader online, free youtube video downloader online, download youtube online free, youtube downloader mp3 online free without any software, youtube multi downloader v3" />
+<meta property="og:url" content="http://youtubemultidownloader.com" />
+<meta property="og:site_name" content="Youtube Multi Downloader" />
+<link rel="canonical" href="https://youtubemultidownloader.com" />
+<title>Youtube Multi Downloader Online Free</title>
+<script src="/assets/js/jquery.min.js?v=1001"></script>
+<link href="/assets/css/bootstrap.min.css?v=1001" rel="stylesheet">
+<script src="/assets/js/bootstrap.min.js?v=1001"></script>
+<script src="/assets/js/sweetalert2.js?v=1001"></script>
+<script src="/assets/js/promise-polyfill.js?v=1001"></script>
+<script src="/assets/js/bootstrap-notify.min.js?v=1001"></script>
+<script src="/assets/js/app.js?v=10001"></script>
+<script> let API_SERVER = "https://api.youtubemultidownloader.com";</script></head>
+<style>
+  .menu{
+    background-color: #f8f9fa!important
+
+  }
+  /* Space out content a bit */
+  body {
+
+  }
+
+  /* Everything but the jumbotron gets side spacing for mobile first views */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  /* Custom page header */
+  .header {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  /* Make the masthead heading the same height as the navigation */
+  .header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+  }
+
+  /* Custom page footer */
+  .footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+  }
+
+  /* Customize container */
+  @media (min-width: 768px) {
+    .container {
+      max-width: 840px;
+    }
+  }
+  .container-narrow > hr {
+    margin: 30px 0;
+  }
+
+  /* Main marketing message and sign up button */
+  .jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .jumbotron .btn {
+    padding: 14px 24px;
+    font-size: 21px;
+  }
+
+  /* Supporting marketing content */
+  .marketing {
+    margin: 40px 0;
+  }
+  .marketing p + h4 {
+    margin-top: 28px;
+  }
+
+  /* Responsive: Portrait tablets and up */
+  @media screen and (min-width: 768px) {
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    /* Space out the masthead */
+    .header {
+      margin-bottom: 30px;
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+      border-bottom: 0;
+    }
+  }
+  .menu {
+    background-color: rgba(248, 249, 250, 0) !important;
+  }
+
+  .bg-light {
+    background-color: rgba(248, 249, 250, 0) !important;
+  }
+  .nav-link.active{
+    color: #fff!important;
+    background-color: #337ab7;
+    border-radius: 4px;
+  }
+</style>
+<style>
+  .spinner {
+    width: 40px;
+    height: 40px;
+
+    position: relative;
+    margin: 100px auto;
+  }
+
+  .double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #333;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+
+  .double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+
+  @-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+  }
+
+  @keyframes sk-bounce {
+    0%, 100% {
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    } 50% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+      }
+  }
+</style>
+<body>
+<div style="margin-bottom: 20px   ">
+<nav class="menu container navbar navbar-expand-lg navbar-light bg-light">
+<a class="navbar-brand" href="/">Youtube Multi Downloader Online</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+<div class="navbar-nav">
+<a id="header1" class="nav-item nav-link" href="/">Single Link</a>
+<a id="header2" class="nav-item nav-link " href="/playlists.html">Playlist</a>
+<a id="header3" class="nav-item nav-link" href="/channel.html">Channel</a>
+<a id="header4" class="nav-item nav-link" href="/howtouse.html">How To Use</a>
+</div>
+</div>
+</nav>
+</div>
+<div class="container">
+<div class="alert alert-success" role="alert">
+<h6 style="color: blue">06/2019: All video that contains copyright material or music has been blocked to prevent stream-ripping.</h6>
+<h6 style="">Youtube Multi Downloader is always free for education purpose, keep in mind that we don't allow download copyrighted content. By using this site you agree our <a href="/tos.html">Tos</a>.</h6>
+<h6 style=" color:  blue;">Add <b>1s</b> after address to download video faster <img class="img-fluid" src="/assets/images/image5.png?v=1"></h6>
+</div>
+<div class="card">
+<div class="card-body">
+<style>
+    #Download_Quality a{
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    #Download_Quality .panel-title{
+        margin-top: 10px;
+    }
+
+</style>
+<div class="input-group">
+<div class="input-group-prepend">
+<div class="input-group-text">Link:</div>
+</div>
+<input type="text" class="form-control" id="inputUrl" placeholder="https://www.youtube.com/watch?v=abcxyz">
+<button class="btn btn-primary">Download</button>
+</div>
+<div id="Loading" style="display: none;" class="spinner">
+<div class="double-bounce1"></div>
+<div class="double-bounce2"></div>
+</div>
+<div id="Download" style="margin-top: 25px;display: none">
+<div class="row">
+<div class="col-sm-5 col-md-5 col-lg-5">
+<div id="Download_Image">
+<a class="thumbnail">
+<img src="" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+</a>
+<h6></h6>
+<h5 id="adsDownload" style="height: 100%;">
+</h5>
+</div>
+</div>
+<div class="col-sm-7 col-md-7 col-lg-7">
+<div id="Download_Error" style="display: none">
+<span style="color: red; margin-bottom: .5rem;font-weight: 500; line-height: 2.2;">Sorry, this video has been blocked on copyright grounds.</span>
+<br><span style="color: #747474   ; margin-bottom: .5rem;">If this is your video and have full right and permission, you can try other service which allow backup all videos from your account.</span>
+<br><div id="btnBackup" style="text-align: center;margin-top: 10px;">
+</div>
+</div>
+<div id="Download_Quality">
+<div class="panel panel-default" style="display: none">
+<div class="panel-heading"><h6 class="panel-title">MP4 Format:</h6></div>
+<div format="MP4" class="panel-body">
+</div>
+</div>
+<div class="panel panel-default" style="display: none">
+<div class="panel-heading"><h6 class="panel-title">Audio:</h6></div>
+<div format="Audio" class="panel-body">
+</div>
+</div>
+<div class="panel panel-default" style="display: none">
+<div class="panel-heading"><h6 class="panel-title">Subtitle:</h6></div>
+<div format="Subtitle" class="panel-body">
+</div>
+</div>
+<div class="panel panel-default" style="display: none">
+<div class="panel-heading"><h6 class="panel-title">MP4 (Video Only):</h6></div>
+<div format="MP4 No Audio" class="panel-body">
+</div>
+</div>
+<div class="panel panel-default" style="display: none">
+<div class="panel-heading"><h6 class="panel-title">WebM (Video Only):</h6></div>
+<div format="WebM No Audio" class="panel-body">
+</div>
+</div>
+<div class="panel panel-default" style="display: none">
+<div class="panel-heading"><h6 class="panel-title">3GP</h6></div>
+<div format="3GP" class="panel-body">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script> $("#header1").addClass("active"); </script></div>
+</div>
+<div class="panel panel-default">
+<iframe id="comment" src="/comment.html" style="height: 100%; width: 100%; border: none;" scrolling="no"></iframe>
+</div>
+<footer class="footer">
+<p>Youtube Multi Downloader Online - All rights reserved | <a href="/tos.html">Terms of Service &amp; Privacy | Copyright Policy </a></p>
+</footer>
+</div>
+<a id="try_from_playlist" target="_blank" rel="noreferrer" href="https://youtubeplaylist.cc/?source=try_from_playlist" role="button" class="btn btn-primary" style="display: none"></a>
+</body>
+<script>
+    $('#comment').load(function() {
+        setInterval (function(){
+            $('#comment').height($("#comment").contents().find("#disqus_thread").height() + 'px');
+        }, 500);
+
+    })
+</script>
+</html>
